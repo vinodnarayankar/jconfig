@@ -1,8 +1,6 @@
 #labels Featured
 = jConfig Tutorial =
 
-= A first simple example on how to use jConfig =
-
 Nothing better than a simple example to see how things works.
 
 We want to introduce in our application a configuration file to manage information about a distribuited cache system (ie memcache).
