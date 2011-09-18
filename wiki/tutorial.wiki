@@ -1,12 +1,7 @@
 #labels Featured
-jConfig Tutorial
+= jConfig Tutorial =
 
-= Introduction =
-
-A first simple example on how to use jConfig
-
-
-= Details =
+= A first simple example on how to use jConfig =
 
 Nothing better than a simple example to see how things works.
 
@@ -138,6 +133,7 @@ public class CacheConfigurationContainer implements IConfigurationChangeListener
 	}
 }
 
+// here I register the listener and load/watch my configuration
 String configPath = "absolute config path";
 Map<String, IConfigurationChangeListener> listeners = new HashMap<String, IConfigurationChangeListener>();
 listeners.put("cache", new CacheConfigurationContainer());
