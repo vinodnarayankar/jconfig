@@ -283,3 +283,23 @@ ConfigurationManager.configureAndWatch(listeners, configPath, 200L);
 }}}
 
 Usually this piece of code will be done at application startup.
+
+----
+
+jConfig provide a default plugin *com.google.code.jconfig.reader.plugins.PropertyConfigurationPlugin* that can be used if you want a configuration map like.
+This plugin will return a *com.google.code.jconfig.model.BasicConfiguration* object. On that object you could perform this action:
+  * getProperty(String key) - String      : Returns the value associated to key or null if the key doesn't exist or there's no property for this configuration
+  * getProperties() - Map<String, String> : Returns all the properties of this configuration
+
+And here an example of a configuration:
+
+{{{
+<configurations>
+	<configuration id="my_props" plugin="com.google.code.jconfig.reader.plugins.PropertyConfigurationPlugin" >
+		<property key="props_1" value="value 1" />
+		<property key="props_2" value="value 2" />
+		<property key="props_3" value="value 3" />
+		<property key="props_4" value="value 4" />
+	</configuration>
+</configurations>
+}}}
