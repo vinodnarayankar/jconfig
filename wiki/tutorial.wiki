@@ -286,8 +286,8 @@ Usually this piece of code will be done at application startup.
 
 ----
 
-jConfig provide a default plugin *com.google.code.jconfig.reader.plugins.PropertyConfigurationPlugin* that can be used if you want a configuration map like.
-This plugin will return a *com.google.code.jconfig.model.BasicConfiguration* object. On that object you could perform this action:
+jConfig provide a default plugin *PropertyConfigurationPlugin* that can be used if you want a configuration map like.
+This plugin will return a *BasicConfiguration* object. On that object you could perform this action:
   * getProperty(String key) - String      : Returns the value associated to key or null if the key doesn't exist or there's no property for this configuration
   * getProperties() - Map<String, String> : Returns all the properties of this configuration
 
