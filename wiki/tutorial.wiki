@@ -205,7 +205,7 @@ After having coded the plugin we have to link together the xml fragment and this
 
 {{{
 <configurations>
-	<configuration id="server_list" plugin="<the_full_package>.ServerConfigurationPlugin" >
+	<configuration id="server_list" plugin="the_full_package.ServerConfigurationPlugin" >
 		<servers host="www.server1.com" port="80" />
 		<servers host="www.server2.com" port="80" />
 	</configuration>
