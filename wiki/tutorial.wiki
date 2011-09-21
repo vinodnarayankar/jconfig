@@ -1,4 +1,4 @@
-#labels Featured
+#labels Featured,Phase-Design,Phase-Implementation
 =Overview=
 
 While working on a project I was asked to develop a configuration manager for that project that had to be highly customizable, need no app restart on changes.
@@ -234,7 +234,7 @@ public class ServerConfigurationPlugin implements IConfigurationPlugin<List<Serv
 
 	public List<ServerBean> readConfiguration(IHierarchicalReader reader) {
 		
-		// so I get only the <server> tag and its children
+		// so I get only the <servers> tag and its children
 		IHierarchicalReader rootNode = reader.getChildren().get(0);
 		List<ServerBean> config = null;
 		try {
