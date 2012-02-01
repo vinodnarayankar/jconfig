@@ -184,7 +184,7 @@ public class ServerConfiguration {
 // the plugin class
 public class ServerConfigurationPlugin implements IConfigurationPlugin<ServerConfiguration> {
 
-	public List<ServerBean> readConfiguration(IHierarchicalReader reader) {
+	public ServerConfiguration readConfiguration(IHierarchicalReader reader) {
 		
 		IHierarchicalReader serversNode = reader.getChildren().get(0);
 		List<ServerBean> servers = new ArrayList<ServerBean>();
